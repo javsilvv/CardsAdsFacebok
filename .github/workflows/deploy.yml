@@ -18,11 +18,7 @@ jobs:
         with:
           server: ${{ secrets.SFTP_HOST }}
           username: ${{ secrets.SFTP_USER }}
-          password: ${{ secrets.SFTP_PASSWORD }}
-          port: ${{ secrets.SFTP_PORT }}
+          port: 22
+          ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
           local_path: "./"
           remote_path: ${{ secrets.REMOTE_PATH }}
-          exclude: |
-            .git*
-            .github*
-            README.md
