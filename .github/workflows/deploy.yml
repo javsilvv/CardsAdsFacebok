@@ -19,6 +19,6 @@ jobs:
           server: ${{ secrets.SFTP_HOST }}
           username: ${{ secrets.SFTP_USER }}
           port: ${{ secrets.SFTP_PORT }}
-          ssh_private_key: ${{ secrets.SFTP_PASSWORD }}
+          passwork: ${{ secrets.SFTP_PASSWORD }}
           local_path: "./"
           remote_path: ${{ secrets.REMOTE_PATH }}
